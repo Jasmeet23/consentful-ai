@@ -1,27 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Consentful AI @ CHI 2027</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consentful AI: Designing Consent Across Data, Models, and Human-AI Interaction — a CHI 2027 workshop.">
+  <title>Consentful AI | CHI 2027 Workshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <h1>Consentful AI</h1>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Consentful AI home">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span>Consentful AI</span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#themes">Themes</a>
+      <a href="#participate">Participate</a>
+      <a href="#program">Program</a>
+      <a href="#organizers">Organizers</a>
+    </div>
+  </nav>
 
-    <h2>
-        Designing Consent Across Data, Models, and Human-AI Interaction
-    </h2>
+  <header class="hero" id="top">
+    <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+    <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">CHI 2027 · One-Day Workshop</p>
+      <h1>Consentful <span>AI</span></h1>
+      <p class="hero-subtitle">Designing Consent Across Data, Models, and Human-AI Interaction</p>
+      <p class="hero-question">What does meaningful consent mean for AI?</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#participate">Call for Participation</a>
+        <a class="button button-ghost" href="#themes">Explore the Questions</a>
+      </div>
+      <div class="lifecycle-mini" aria-label="AI lifecycle">
+        <span>Data</span><b>→</b><span>Models</span><b>→</b><span>Interaction</span><b>→</b><span>Action</span>
+      </div>
+    </div>
+  </header>
 
-    <p>
-        CHI 2027 Workshop
-    </p>
+  <main id="main">
+    <section class="section intro" id="about">
+      <div class="section-label">01 · About</div>
+      <div class="intro-grid">
+        <h2>Consent shouldn't be<br>a one-time checkbox.</h2>
+        <div class="prose">
+          <p class="lead">Generative AI increasingly depends on human participation across its lifecycle. Before deployment, human-created texts, images, code, music, conversations, and other materials may become training data. After deployment, AI systems can collect information, infer preferences and attributes, retain context, connect to other systems, and act on users' behalf.</p>
+          <p>This workshop brings together researchers and practitioners to investigate <strong>consentful AI</strong> as a human-centered approach to the design, development, and governance of AI systems.</p>
+          <p>We connect consent for the data used to develop AI with consent during human-AI interaction. Rather than treating consent as a one-time checkbox, we investigate it as an ongoing and contextual relationship among people, data, and AI systems.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="statement" aria-label="Workshop framing">
+      <p>How might AI systems <em>respect</em>, <em>solicit</em>, <em>represent</em>, <em>negotiate</em>, and <em>operationalize</em> human consent throughout their lifecycle?</p>
+    </section>
+
+    <section class="section" id="themes">
+      <div class="section-label">02 · Workshop Themes</div>
+      <div class="section-heading">
+        <h2>Questions we want to explore</h2>
+        <p>We welcome completed work, work-in-progress, and provocations that challenge assumptions about consent across generative AI, AI agents, and datasets.</p>
+      </div>
+
+      <div class="theme-grid">
+        <article class="theme-card">
+          <span class="card-number">01</span>
+          <h3>Human–AI Interaction</h3>
+          <p>When should AI explicitly ask permission before remembering, inferring, sharing, or acting?</p>
+          <ul>
+            <li>Risk-sensitive confirmation</li>
+            <li>Conversational consent</li>
+            <li>Expiration and revocation</li>
+            <li>Avoiding consent fatigue</li>
+          </ul>
+        </article>
+        <article class="theme-card">
+          <span class="card-number">02</span>
+          <h3>Agentic AI</h3>
+          <p>How should agents handle the scope of authority when acting toward a user's high-level goal?</p>
+          <ul>
+            <li>Actions requiring confirmation</li>
+            <li>Sequences of delegated actions</li>
+            <li>Revisiting authority</li>
+            <li>Conflicting permissions</li>
+          </ul>
+        </article>
+        <article class="theme-card">
+          <span class="card-number">03</span>
+          <h3>Training Data</h3>
+          <p>What constitutes meaningful consent for using human-created content to train AI?</p>
+          <ul>
+            <li>Opt-in and opt-out</li>
+            <li>Granular creator preferences</li>
+            <li>Provenance and documentation</li>
+            <li>Withdrawal after training</li>
+          </ul>
+        </article>
+        <article class="theme-card">
+          <span class="card-number">04</span>
+          <h3>Design & Evaluation</h3>
+          <p>How do we know whether consent is informed, meaningful, and supported without overwhelming people?</p>
+          <ul>
+            <li>Measuring understanding</li>
+            <li>Interaction patterns</li>
+            <li>Dark patterns of AI consent</li>
+            <li>Limits of individual consent</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="lifecycle-section">
+      <div class="section lifecycle-wrap">
+        <div class="section-label light">03 · Across the Lifecycle</div>
+        <h2>Where does consent enter the picture?</h2>
+        <div class="lifecycle" role="list">
+          <div role="listitem"><span>01</span>Data Creation</div>
+          <div role="listitem"><span>02</span>Data Collection</div>
+          <div role="listitem"><span>03</span>Dataset Construction</div>
+          <div role="listitem"><span>04</span>Model Training</div>
+          <div role="listitem"><span>05</span>Model Deployment</div>
+          <div role="listitem"><span>06</span>Human–AI Interaction</div>
+          <div role="listitem"><span>07</span>AI Action</div>
+          <div role="listitem"><span>08</span>Data Reuse</div>
+        </div>
+        <p class="lifecycle-note">At each stage we will ask: whose consent is involved, where is it currently requested or absent, and where do existing mechanisms fail?</p>
+      </div>
+    </section>
+
+    <section class="section cfp" id="participate">
+      <div class="section-label">04 · Call for Participation</div>
+      <div class="cfp-grid">
+        <div>
+          <h2>Join the conversation.</h2>
+          <p class="lead">We invite researchers and practitioners from HCI, AI, privacy, responsible AI, design, data governance, machine learning, and related areas.</p>
+          <p>Submissions may focus on consent in human-AI interaction, consent concerning data used for AI development, or conceptual and technical connections between the two. We particularly encourage concrete <strong>consent breakdowns</strong>—situations where existing mechanisms for permission, notice, refusal, or withdrawal fail to represent stakeholder intentions.</p>
+        </div>
+        <aside class="submission-box">
+          <p class="box-label">Submission format</p>
+          <p class="big">2–4 pages</p>
+          <p>Position papers, works-in-progress, design explorations, or provocations, excluding references.</p>
+          <hr>
+          <p class="box-label">Selection</p>
+          <p>Relevance, clarity of contribution, and potential to stimulate discussion.</p>
+          <hr>
+          <p class="box-label">Submission link</p>
+          <p><strong>To be announced</strong></p>
+        </aside>
+      </div>
+
+      <div class="dates">
+        <div><span>Submission deadline</span><strong>TBA</strong></div>
+        <div><span>Notification</span><strong>TBA</strong></div>
+        <div><span>Workshop date</span><strong>CHI 2027 · TBA</strong></div>
+        <div><span>Expected participants</span><strong>≈ 20</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="program">
+      <div class="section-label">05 · Workshop Activities</div>
+      <div class="section-heading">
+        <h2>A one-day workshop built around making.</h2>
+        <p>Participants will move from mapping problems to analyzing breakdowns, developing design insights, and synthesizing a shared research agenda.</p>
+      </div>
+      <div class="program-list">
+        <article>
+          <span>01</span>
+          <div><h3>Mapping the Consent Landscape</h3><p>Identify AI consent problems across the lifecycle and build a shared vocabulary for where consent is requested, absent, or inadequate.</p></div>
+        </article>
+        <article>
+          <span>02</span>
+          <div><h3>Consent Breakdown Scenarios</h3><p>Analyze concrete cases involving data creators, end users, AI agents, bystanders, and withdrawal of previously granted permission.</p></div>
+        </article>
+        <article>
+          <span>03</span>
+          <div><h3>Designing Consentful AI</h3><p>Turn scenarios into design insights spanning permission dashboards, risk-sensitive confirmation, creator preferences, negotiation, and revocation.</p></div>
+        </article>
+        <article>
+          <span>04</span>
+          <div><h3>Research Agenda</h3><p>Synthesize open questions across theories of consent, AI agents, dataset governance, creator agency, technical enforcement, evaluation, and the limits of consent.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="scenarios">
+      <div class="section">
+        <div class="section-label">06 · Scenarios</div>
+        <h2>Consent gets complicated quickly.</h2>
+        <div class="scenario-grid">
+          <article><span>Creator</span><p>An illustrator discovers publicly accessible artwork in datasets used for generative image models.</p></article>
+          <article><span>End User</span><p>A user reveals sensitive information to an AI that could remember it for future personalization.</p></article>
+          <article><span>AI Agent</span><p>An assistant organizing a trip may need email, calendar, financial information, and third-party services.</p></article>
+          <article><span>Bystander</span><p>A user uploads a photograph containing other people and asks an AI to analyze or transform it.</p></article>
+          <article><span>Withdrawal</span><p>A creator who previously permitted data use wants to withdraw permission after a model has been trained.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="organizers">
+      <div class="section-label">07 · Organizers</div>
+      <div class="section-heading">
+        <h2>Organizing team</h2>
+        <p>Add headshots and short bios when ready. The affiliations below are taken from the workshop proposal.</p>
+      </div>
+      <div class="organizer-grid">
+        <article class="organizer"><div class="avatar">JK</div><h3>Jasmeet Kaur</h3><p>CISPA – Helmholtz Center for Information Security</p></article>
+        <article class="organizer"><div class="avatar">AB</div><h3>Alexandra Bremers</h3><p>Carnegie Mellon University</p></article>
+        <article class="organizer"><div class="avatar">SN</div><h3>Sheza Naveed</h3><p>University of Michigan</p></article>
+        <article class="organizer"><div class="avatar">VM</div><h3>Vikram Mohanty</h3><p>Carnegie Mellon University</p></article>
+        <article class="organizer"><div class="avatar">HH</div><h3>Hana Habib</h3><p>Carnegie Mellon University</p></article>
+        <article class="organizer"><div class="avatar">KT</div><h3>Kentaro Toyama</h3><p>University of Michigan</p></article>
+        <article class="organizer"><div class="avatar">LC</div><h3>Lorrie Faith Cranor</h3><p>Carnegie Mellon University</p></article>
+        <article class="organizer"><div class="avatar">JI</div><h3>Jane Im</h3><p>CISPA – Helmholtz Center for Information Security</p></article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div>
+        <p class="eyebrow">Consentful AI · CHI 2027</p>
+        <h2>From permission as a notice<br>to consent as a relationship.</h2>
+        <a class="button button-light" href="#participate">How to Participate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Consentful AI</strong><br><span>Designing Consent Across Data, Models, and Human-AI Interaction</span></div>
+    <div class="footer-right">CHI 2027 Workshop<br><span>Contact details · TBA</span></div>
+  </footer>
+
+  <script>
+    const button = document.querySelector('.menu-button');
+    const links = document.querySelector('#nav-links');
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
-
 </html>
