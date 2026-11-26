@@ -158,41 +158,46 @@ footer{background:var(--ink);color:white;display:flex;justify-content:space-betw
     text-align: left;
   }
 }
+/* Workshop Themes - Heading and Proposal Link */
+
 #themes .section-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 #themes .section-heading h2 {
   margin: 0;
+  flex: 1;
 }
 
-.proposal-link {
+#themes .proposal-link {
   display: inline-flex;
   align-items: center;
-  padding: 10px 18px;
-  border: 1px solid currentColor;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  padding: .85rem 1.25rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  font-size: .9rem;
+  font-weight: 700;
   text-decoration: none;
-  color: inherit;
+  color: var(--ink);
   white-space: nowrap;
-  transition: background 0.2s ease;
+  transition: background .2s ease, transform .2s ease;
 }
 
-.proposal-link:hover {
-  background: rgba(128, 128, 128, 0.1);
+#themes .proposal-link:hover {
+  background: var(--lime);
+  transform: translateY(-2px);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
+/* Responsive alignment */
+
+@media (max-width: 850px) {
   #themes .section-heading {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 1.2rem;
   }
 }
